@@ -44,7 +44,7 @@ def get_restaurants(post_code: str) -> List[Restaurant]:
                 Restaurant(
                     restaurant["Name"],
                     restaurant["Rating"]["RatingStars"],
-                    [cusine["Name"] for cusine in restaurant["Cuisines"]],
+                    [cuisine["Name"] for cuisine in restaurant["Cuisines"]],
                 )
             )
 
